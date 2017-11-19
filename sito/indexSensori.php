@@ -58,9 +58,9 @@ th{
 		$client = new MongoDB\Client("mongodb://localhost:27017");		
 		
 		
-		$sensorCollection = $client->db_sensori->sensori;
+		$sensori = $client->db_sensori->sensori;
 
-		$cursor = iterator_to_array( $sensorCollection->find( [ 'attivo' => 'si' ] )); 
+		$cursor = iterator_to_array( $sensorCollection->find( [ 'attivo' => true ] )); #se il db è vuoto o non ci sono sensori attivi bisogna gestire l' eccezzione
 	
 		$keys1 = iterator_to_array($cursor[0]);
 		

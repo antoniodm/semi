@@ -3,22 +3,27 @@
 require 'vendor/autoload.php'; // qui trovi le istruzioni su come impostare php e mongodb http://php.net/manual/en/mongodb.tutorial.library.php
 
 $client = new MongoDB\Client("mongodb://localhost:27017"); //si connette al db
-$mcollection = $client->semi_db->misuration_col; 
-$scollection = $client->semi_db->sensors_col; 
+$mcollection = $client->db_misurazioni->misurazioni; 
+$scollection = $client->db_sensori->sensori; 
 
-$id_sensor = $_POST['id_sensor'];
-$sens = $scollection->findOne([ 'id_sensor' => $id_sensor ]);
+//salvo i valori delle rispettive chiavi e li converto nei tipi corretti
+$id_sensore = (int)$_POST['id_sensore'];
+$id_arduino = (int)$_POST['id_arduino'];
 
-if (empty($sens))
-	{
-	$result = $scollection->insertOne( [ 'id_sensor' => $id_sensor, 'type' => NULL, 'code' => NULL]);
-	}
+$umidita = (float)$_POST['umidita'];
+$temperatura = (float)$_POST['temperatura'];
+$data = (DateTime)$_POST['data'];
 
-	$id_sensor = $_POST['id_sensor'];
-	$datetime = $_POST['datetime'];
-	$humidity = $_POST['humidity'];
-	$temperature = $_POST['temperature'];
+
+$cursore = $scollection->findOne([ 'id_sensore' => $id_sensor ]);
+
+//se il sensore non esiste inserisce un nuovo sensore nel db db_sensori
+//ma come gli assegno il nome della pianta?
+if (empty($sens)){
+	$result = $scollection->insertOne( [ 'id_sensore' => $id_sensor, 'id_arduino' => $id_arduino, 'attivo' => true, 'pianta' => 'indefinito']);
+}
+
 	
-	$result = $mcollection->insertOne( [ 'sensore' => $id_sensor, 'umidita' => $humidity, 'temperatura' => $temperature, 'data' => $datetime ] ); // qui fa l' inserimento
+$result = $mcollection->insertOne( [ 'id_sensore' => $id_sensore, 'umidita' => $umidita, 'temperatura' => $temperatura, 'data' => $data ] ); 
  
 ?>

@@ -58,11 +58,11 @@ th{
 		$client = new MongoDB\Client("mongodb://localhost:27017");		
 		
 		
-		$sensorCollection = $client->db_sensori->sensori;
+		$sensori = $client->db_sensori->sensori;
 
-		$cursor = iterator_to_array( $sensorCollection->find( [ 'attivo' => 'si' ] )); 
+		$cursor = iterator_to_array( $sensori->find( [ 'attivo' => true ] )); 
 	
-		$keys1 = iterator_to_array($cursor[0]);
+		$keys1 = iterator_to_array($cursor[0]); #se il db è vuoto cursor è null, bisogna gestire eccezzione
 		
 		$keys1[] = array_keys($keys1);
 	
