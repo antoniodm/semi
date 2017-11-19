@@ -12,7 +12,7 @@ $id_arduino = (int)$_POST['id_arduino'];
 
 $umidita = (float)$_POST['umidita'];
 $temperatura = (float)$_POST['temperatura'];
-$data = (DateTime)$_POST['data'];
+$data = (string)$_POST['data'];
 
 
 $cursore = $scollection->findOne([ 'id_sensore' => $id_sensor ]);
