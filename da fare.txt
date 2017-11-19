@@ -1,0 +1,2 @@
+- i valori delle chiavi che vengono salvati nei documenti di mongodb (ID_sensore, ID_arduino, temperatura, umidità etc.) devono essere salvati in interi o float (piuttosto che stringhe), altrimenti è un casino ordinarli in modo crescente/decrescente
+
