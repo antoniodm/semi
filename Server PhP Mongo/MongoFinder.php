@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-
+//commento per test
 //questo script l' ho fatto solo per vedere come funzionava il search, se funziona dovrebbe stamparti una pagina piena di misurazioni in base a quante ne hai fatte
 
 //connessione al db in locale
