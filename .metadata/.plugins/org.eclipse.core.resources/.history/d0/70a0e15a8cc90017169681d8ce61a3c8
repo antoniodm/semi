@@ -1,0 +1,59 @@
+from xmlrpc.server import SimpleXMLRPCServer
+import xmlrpc.client
+from xmlrpc.server import SimpleXMLRPCRequestHandler
+
+import socket
+import ipaddress
+import time
+import pymongo
+import datetime
+
+from pymongo import MongoClient
+client = None
+collection = None
+ip = socket.gethostbyname(socket.gethostname())	
+port = 8000
+
+class RequestHandler(SimpleXMLRPCRequestHandler):
+    rpc_paths = ('/RPC2',)
+
+
+def insert_misuration(sensor, temperature, humidity):
+    misurazione = {"sensore" : sensor,
+                   "umidità" : temperature,
+                   "temperatura" : humidity,
+                   "data" : datetime.datetime.now()}
+    print("Received: " + sensor + ", " + temperature + ", " + humidity + ", ")
+    try:
+        id = collection.insert_one(misurazione).inserted_id
+        print("Inserted successfull with ID: " + str(id) )
+    except Exception as e:
+        print("Errore nella connessione al DB:")
+        print(e)
+        print("La misurazione non è stata salvata")
+    
+	
+try:
+    client = MongoClient(ip, 27017)    
+    db = client.test_database #decidere il nome
+    collection = db.test_collection #decidere il nome
+
+except Exception as e:
+    print("Errore nella creazione del DB: ")
+    print(e)
+    quit()
+
+
+try:
+    print(ip)
+    server = SimpleXMLRPCServer(("0.0.0.0", port), allow_none=True)
+    print("Server in ascolto sulla porta " + str(port))
+    server.register_function(insert_misuration, "insert_misuration")
+    server.serve_forever()
+except Exception as e:
+    print("Errore nella creazione del server RPC:")
+    print(e)
+    quit()
+
+
+    

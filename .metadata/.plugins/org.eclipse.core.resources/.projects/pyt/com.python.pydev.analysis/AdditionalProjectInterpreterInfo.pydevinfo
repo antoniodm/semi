@@ -1,0 +1,27 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/antonio/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/pyt/com.python.pydev.analysis/v2_indexcache
+mongoclient|1511084784000000000|/home/antonio/workspace/pyt/mongoclient.py
+client|1511088613000000000|/home/antonio/workspace/pyt/client.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=mongoclient
+2=client
+-- END DICTIONARY
+-- START TREE 1
+10
+mis|1|misurazioni!11@
+p|1|p!19@
+por|2|port!19@portaCOM!11@
+r|2|r!11@r!19@
+s|1|s!19@
+ser|3|serial_data!18@ser!19@ser!11@
+sig|1|signal_handler!18@
+sto|1|stop!19@
+upd|3|updater!11@updater!19@update!19@
+val|1|valore!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

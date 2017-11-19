@@ -1,0 +1,793 @@
+19:02:03 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.cpp"
+../src/test.cpp: In function ‘int main()’:
+../src/test.cpp:16:2: error: ‘cout’ was not declared in this scope
+  cout << "inserire somma";
+  ^~~~
+../src/test.cpp:16:2: note: suggested alternative:
+In file included from ../src/test.cpp:9:0:
+/usr/include/c++/6/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../src/test.cpp:13:6: warning: unused variable ‘a’ [-Wunused-variable]
+  int a=3;
+      ^
+../src/test.cpp:14:6: warning: unused variable ‘b’ [-Wunused-variable]
+  int b=5;
+      ^
+../src/test.cpp:15:6: warning: unused variable ‘c’ [-Wunused-variable]
+  int c=6;
+      ^
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/test.o" non riuscito
+make: *** [src/test.o] Errore 1
+19:04:33 **** Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:13:6: warning: unused variable ‘a’ [-Wunused-variable]
+  int a=3;
+      ^
+../src/fra.cpp:14:6: warning: unused variable ‘b’ [-Wunused-variable]
+  int b=5;
+      ^
+../src/fra.cpp:15:6: warning: unused variable ‘c’ [-Wunused-variable]
+  int c=6;
+      ^
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:04:42 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:12:55 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:13:45 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:14:09 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:29:57 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:30:28 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:44:06 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:23:37: error: expected primary-expression before ‘float’
+   cout<<" la media decimanle e':"<<(float)<<(a+b+c+d)/4 <<endl;
+                                     ^~~~~
+../src/fra.cpp:23:37: error: expected ‘)’ before ‘float’
+make: *** [src/fra.o] Errore 1
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+19:44:42 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:45:20 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:45:46 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:45:58 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:46:20 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:46:35 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:46:49 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:47:31 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+20:00:07 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+20:00:21 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+20:01:05 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+20:02:19 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+20:02:35 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+20:03:41 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+18:55:04 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp:23:2: error: expected unqualified-id before ‘return’
+  return 0;
+  ^~~~~~
+../src/fra.cpp:24:1: error: expected declaration before ‘}’ token
+ }
+ ^
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+make: *** [src/fra.o] Errore 1
+18:55:36 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+18:55:53 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:11:30 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:13:04 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:14:57 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:17:22 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:17:49 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:17:58 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:38:16 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:14:2: error: expected ‘,’ or ‘;’ before ‘int’
+  int risultato=0
+  ^~~
+../src/fra.cpp:17:2: error: ‘risultato’ was not declared in this scope
+  risultato = numero % 2;
+  ^~~~~~~~~
+make: *** [src/fra.o] Errore 1
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+19:38:28 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:14:2: error: expected ‘,’ or ‘;’ before ‘int’
+  int risultato=0;
+  ^~~
+../src/fra.cpp:17:2: error: ‘risultato’ was not declared in this scope
+  risultato = numero % 2;
+  ^~~~~~~~~
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+make: *** [src/fra.o] Errore 1
+19:38:34 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:38:42 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:39:07 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:58:09 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:58:32 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:59:06 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+18:38:06 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+18:46:23 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:18:8: error: ‘numero’ was not declared in this scope
+   cin>>numero;
+        ^~~~~~
+../src/fra.cpp:13:6: warning: unused variable ‘numro’ [-Wunused-variable]
+  int numro=0;
+      ^~~~~
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+make: *** [src/fra.o] Errore 1
+18:46:55 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+18:54:09 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+18:57:23 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+18:59:44 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:06:34 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:21:3: error: ‘media’ was not declared in this scope
+   media=somma/4
+   ^~~~~
+make: *** [src/fra.o] Errore 1
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+19:06:54 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:21:3: error: ‘media’ was not declared in this scope
+   media=somma/4;
+   ^~~~~
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+make: *** [src/fra.o] Errore 1
+19:07:42 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:15:6: warning: variable ‘media’ set but not used [-Wunused-but-set-variable]
+  int media=0;
+      ^~~~~
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:08:58 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:09:16 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:21:28 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:16:6: error: expected ‘;’ before string constant
+  cout"inserisci il numero di volte"<<endl;
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/fra.cpp:16:42: warning: statement has no effect [-Wunused-value]
+  cout"inserisci il numero di volte"<<endl;
+                                          ^
+make: *** [src/fra.o] Errore 1
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+19:21:48 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:47:58 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:16:7: error: ‘n’ was not declared in this scope
+  cin>>n;
+       ^
+make: *** [src/fra.o] Errore 1
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/fra.o" non riuscito
+19:48:24 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:48:41 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:49:43 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+../src/fra.cpp: In function ‘int main()’:
+../src/fra.cpp:13:6: warning: unused variable ‘numero’ [-Wunused-variable]
+  int numero=0;
+      ^~~~~~
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:03:09 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:06:36 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:08:07 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:10:49 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:30:18 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:31:35 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:52:47 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:53:15 **** Incremental Build of configuration Debug for project fra ****
+make all 
+make: Nessuna operazione da eseguire per "all".
+19:57:32 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+19:59:22 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+20:01:00 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+21:09:09 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+21:20:01 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+21:28:15 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+21:29:46 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 

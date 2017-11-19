@@ -1,0 +1,31 @@
+//============================================================================
+// Name        : fra.cpp
+// Author      : fra
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n=0;
+	int somma=0;
+
+	cout<<"inserisci numero"<<endl;
+	cin>>n;
+	for(int i=0;i<=n;i++)
+	{
+		somma=somma+n;
+		n=n-1;
+
+	}
+	cout<<"somma"<<somma<<endl;
+
+
+
+	return 0;
+
+
+}

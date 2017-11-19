@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : test.cpp
+// Author      : 
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+
+int main() {
+	int array[10];
+	int i;
+	for (i=0; i<10; i++){
+		array[i]=i;
+	}
+	i=0;
+	while(i!=10){
+		printf("%d",array[i]);
+		i++;
+	}
+	return 0;
+}

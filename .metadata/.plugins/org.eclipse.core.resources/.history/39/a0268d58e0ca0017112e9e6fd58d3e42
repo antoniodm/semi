@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Server>
+	<Port name="HTTP/1.1" protocol="HTTP">80</Port>
+<PathMapping local="/Server PhP Mongo" module="Server PhP Mongo" remote="/home/antonio/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/htdocs/Server PhP Mongo"/><PathMapping local="/Server PhP" module="Server PhP" remote="/home/antonio/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/htdocs/Server PhP"/></Server>

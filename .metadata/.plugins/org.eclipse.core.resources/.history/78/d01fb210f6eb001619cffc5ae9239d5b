@@ -1,0 +1,6 @@
+<?php
+$connection = mysqli_connect('seeds.000webhostapp.com','id728972_utente','password','id728972_seeds') or die('DB connection failed: ' . mysql_error());
+
+?>
+
+

@@ -1,0 +1,26 @@
+//============================================================================
+// Name        : test.cpp
+// Author      : 
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+
+int main() {
+	int a = 3;
+	int b= 5;
+
+	int c=0;
+	c=b; //c=5
+	b=a;
+	a=c;
+
+
+	printf("a= %d\n",a);
+	printf("b= %d",b);
+
+	return 0;
+}
+

@@ -1,0 +1,3 @@
+#PHP Server publish data
+#Thu Nov 16 16:13:29 CET 2017
+org.eclipse.php.builtin.server.core.moduleFactory\:Server\ PhP\ Mongo=/home/antonio/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/htdocs/Server PhP Mongo

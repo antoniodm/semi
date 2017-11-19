@@ -1,0 +1,37 @@
+<?php
+include 'Connection.php';
+
+print "Updater:";
+
+
+// perform select for checking the existence of the sensorID and, if does not existsm insert it
+$result = mysqli_query($connection, "SELECT * FROM sensors WHERE id_sensor = ".$_POST['id_sensor']);
+//se l'id del sensore non è presente aggiungi una riga ai sensori
+if (mysqli_num_rows($result) == 0)
+{
+	mysqli_query($connection, "INSERT INTO sensors SET id_sensor='$id_sensor',type=NULL,code=NULL");
+
+}
+
+// insert received values into log table
+if ($_POST['temp'] == '0') {
+	$id_sensor = $_POST['id_sensor'];
+	$datetime = $_POST['datetime'];
+	$humidity = $_POST['humidity'];
+	$temperature = $_POST['temperature'];
+	//$insert = "INSERT INTO seeds.misuration (id_sensor,datetime,humidity,temperature) VALUES 
+	//		('" . $_POST['id_sensor'] . "','" . $_POST['datetime'] . "','" . $_POST['humidity'] . "','" . $_POST['temperature'] . "')";
+	$insert = "INSERT INTO misuration SET id_sensor=$id_sensor,datetime='$datetime',humidity=$humidity,temperature=$temperature"; 
+} 
+
+//print $insert;
+print "$insert";
+$ris1 = mysqli_query($connection, $insert);
+mysqli_close($connection);
+
+
+
+
+?>
+		
+		

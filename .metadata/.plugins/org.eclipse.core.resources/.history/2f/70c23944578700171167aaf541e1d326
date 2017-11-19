@@ -1,0 +1,24 @@
+//============================================================================
+// Name        : test.cpp
+// Author      : 
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+
+int main() {
+	int base = 2;
+	int altezza= 4;
+	int area;
+	//string string = francesco;
+
+	area=(base*altezza)/2;
+
+
+	printf("%d",area);
+
+	return 0;
+}
+

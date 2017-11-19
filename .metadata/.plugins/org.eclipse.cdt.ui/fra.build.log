@@ -1,0 +1,15 @@
+21:29:46 **** Incremental Build of configuration Debug for project fra ****
+make all 
+Building file: ../src/fra.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fra.d" -MT"src/fra.o" -o "src/fra.o" "../src/fra.cpp"
+Finished building: ../src/fra.cpp
+ 
+Building target: fra
+Invoking: GCC C++ Linker
+g++  -o "fra"  ./src/fra.o   
+Finished building target: fra
+ 
+
+21:29:47 Build Finished (took 1s.212ms)
+

@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : fra.cpp
+// Author      : fra
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n=0;
+	cin>>n;
+	for(int i=1;i<n;i++){
+	cout<<"ciao"<<i<<endl;
+
+
+
+
+
+	}
+
+
+
+	return 0;
+
+
+}

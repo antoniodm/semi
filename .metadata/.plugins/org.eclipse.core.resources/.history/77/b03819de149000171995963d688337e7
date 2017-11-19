@@ -1,0 +1,28 @@
+//============================================================================
+// Name        : fra.cpp
+// Author      : fra
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int numero=0;
+	int esponente=0;
+	int moltiplicazione=1;
+
+	cout<<"inserisci numero"<<endl;
+	cin>>numero;
+	cout<<"inserisci esponente"<<endl;
+	cin>>esponente;
+	for(int i=0;i<esponente;i++){
+		moltiplicazione=moltiplicazione *numero;
+	}
+	cout<<"il risultato e' "<<moltiplicazione<<endl;
+
+	return 0;
+}

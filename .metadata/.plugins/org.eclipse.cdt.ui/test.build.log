@@ -1,0 +1,28 @@
+19:02:03 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/test.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.cpp"
+../src/test.cpp: In function ‘int main()’:
+../src/test.cpp:16:2: error: ‘cout’ was not declared in this scope
+  cout << "inserire somma";
+  ^~~~
+../src/test.cpp:16:2: note: suggested alternative:
+In file included from ../src/test.cpp:9:0:
+/usr/include/c++/6/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../src/test.cpp:13:6: warning: unused variable ‘a’ [-Wunused-variable]
+  int a=3;
+      ^
+../src/test.cpp:14:6: warning: unused variable ‘b’ [-Wunused-variable]
+  int b=5;
+      ^
+../src/test.cpp:15:6: warning: unused variable ‘c’ [-Wunused-variable]
+  int c=6;
+      ^
+src/subdir.mk:18: set di istruzioni per l'obiettivo "src/test.o" non riuscito
+make: *** [src/test.o] Errore 1
+
+19:02:04 Build Finished (took 1s.49ms)
+

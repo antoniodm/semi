@@ -1,0 +1,58 @@
+import serial
+import requests
+import datetime
+import time
+
+
+
+portaCOM = "/dev/ttyACM0" #da aggiornare con la tua porta
+
+
+updater = "http://192.168.1.100/MongoUpdater.php"  #questa è da aggironare con la directory dove è contenuto lo script che prima si chiamava "updater.php"
+
+
+try:
+    ser = serial.Serial(portaCOM, 9600, timeout = None)
+except Exception:
+    print("Errore nel determinare la porta!")
+    print("\nAttualmente in uso: " + portaCOM)
+    quit()
+
+
+ser.flushInput()
+
+while(True):
+    
+    ser.flushInput() #pulisce la porta seriale
+
+    try:
+        
+        valore = ser.readline()
+
+        valore = valore.decode().strip()
+        
+        if(valore != None):
+
+            misurazioni = (valore.split(':'))
+            
+            print(misurazioni)
+            
+            try:
+                
+                r = requests.post(updater, data={
+                                                        'id_sensor': misurazioni[0], 
+                                                        'humidity': misurazioni[1], 
+                                                        'temperature': misurazioni[2],
+                                                        'datetime': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), 
+                })
+                print(r)
+            except Exception as e:
+                print("Errore nella connessione al server php: " + updater )
+                print(e)
+    except Exception as e:
+        print("Errore nella lettura da porta seriale: " + portaCOM)
+        print(e)
+        
+    
+    time.sleep(5)
+

@@ -1,0 +1,47 @@
+import serial
+import time
+import datetime
+import xmlrpc.client
+
+
+portaCOM = '/dev/ttyACM0'
+sensore = 1 #il sensore dovrebbe arrivare dall' arduino
+humidity = 0
+temperature = 0
+RPCip = "192.168.1.100"
+RPCport = 8000
+#dispositivo bluetooth qui
+try:
+    ser = serial.Serial(portaCOM, 9600, timeout = None)
+except Exception as ex:
+    print(ex)
+    print("Errore nel determinare la porta!")
+    print("\nAttualmente in uso: " + portaCOM)
+    quit()
+
+
+try:
+    proxy = xmlrpc.client.ServerProxy( (RPCip + ":" + (str)(RPCport)), verbose=False)
+except Exception as ex:
+    print(ex)
+    print("Errore nel connettersi al server RPC: " + (str)(proxy) )
+    quit()
+    
+print("Connesso a: " + (str)(proxy))
+
+ser.flushInput()
+
+while(True):
+    ser.flushInput()
+    valore = ser.readline().decode().strip()
+
+    if(valore != None):
+        stringa = (valore.split(':'))
+        print(stringa)
+        try:
+            proxy.insert_misuration("0", stringa[0], stringa[1])
+        except Exception as e:
+            print("Errore nella connessione al server RPC: " + (str)(proxy) ) #dovrei salvare le misurazioni?
+            print(e)
+        time.sleep(5)
+
