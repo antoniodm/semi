@@ -19,7 +19,7 @@ $cursore = $scollection->findOne([ 'id_sensore' => $id_sensor ]);
 
 //se il sensore non esiste inserisce un nuovo sensore nel db db_sensori
 //ma come gli assegno il nome della pianta?
-if (empty($sens)){
+if (empty($cursore)){
 	$result = $scollection->insertOne( [ 'id_sensore' => $id_sensor, 'id_arduino' => $id_arduino, 'attivo' => true, 'pianta' => 'indefinito']);
 }
 
