@@ -15,12 +15,12 @@ $temperatura = (float)$_POST['temperatura'];
 $data = (string)$_POST['data'];
 
 
-$cursore = $scollection->findOne([ 'id_sensore' => $id_sensor ]);
+$cursore = $scollection->findOne([ 'id_sensore' => $id_sensore ]);
 
 //se il sensore non esiste inserisce un nuovo sensore nel db db_sensori
 //ma come gli assegno il nome della pianta?
 if (empty($cursore)){
-	$result = $scollection->insertOne( [ 'id_sensore' => $id_sensor, 'id_arduino' => $id_arduino, 'attivo' => true, 'pianta' => 'indefinito']);
+	$result = $scollection->insertOne( [ 'id_sensore' => $id_sensore, 'id_arduino' => $id_arduino, 'attivo' => true, 'pianta' => 'indefinito']);
 }
 
 	
