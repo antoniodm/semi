@@ -6,8 +6,8 @@ require 'vendor/autoload.php';
 //connessione al db in locale
 $client = new MongoDB\Client("mongodb://localhost:27017");
 //selezione della collezione da usare
-$mcollection = $client->semi_db->misuration_col;
-$scollection = $client->semi_db->sensors_col;
+$mcollection = $client->db_misurazioni->misurazioni;
+$scollection = $client->db_sensori->sensori; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 	//Conto quante variabili sono passate come argomento nell'URL
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		$arr = array();
    		foreach($result as $c){
 
-	       	$temp = array("id_sensor" => $c["id_sensor"], "type" => $c["type"], "code" => $c["code"]);
+	       	$temp = array("id_sensor" => $c["id_sensore"], "type" => $c["pianta"], "code" => $c["id_arduino"]);
 	       	 array_push($arr, $temp);
 
 		}
@@ -33,12 +33,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 	if ($nVar == 1) {
 		$id = $_GET['id'];
-		$result = $mcollection->find( [ 'sensore' => $id ] ); 
+
+		$result = $mcollection->find( [ 'id_sensore' => (int)$id ] ); 
+
 		//stampa il json formattato correttamente per l'app 
 		$arr = array();
    		foreach($result as $c){
-
-	       	$temp = array("id_sensor" => $c["sensore"], "humidity" => $c["umidita"], "temperature" => $c["temperatura"], "datetime" => $c["data"]);
+	       	$temp = array("id_sensor" => $c["id_sensore"], "humidity" => $c["umidita"], "temperature" => $c["temperatura"], "datetime" => $c["data"]);
 	       	 array_push($arr, $temp);
 
 		}
@@ -61,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 		foreach($result as $c){
 
-	       	$temp = array("id_sensor" => $c["sensore"], "humidity" => $c["umidità"], "temperature" => $c["temperatura"], "datetime" => $c["data"]);
+	       	$temp = array("id_sensor" => $c["id_sensore"], "humidity" => $c["umidita"], "temperature" => $c["temperatura"], "datetime" => $c["data"]);
 	       	 array_push($arr, $temp);
 
 		}
