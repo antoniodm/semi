@@ -13,8 +13,14 @@ $id_arduino = (int)$_POST['id_arduino'];
 $umidita = (float)$_POST['umidita'];
 $temperatura = (float)$_POST['temperatura'];
 $data = $_POST['data'];
+//$test = $data;
+//$data = new MongoDB\BSON\UTCDateTime($data);
 
-$data = new MongoDB\BSON\UTCDateTime( $data ); //risolvere il problema noto della data indietro di una ora
+//$data = new MongoDB\BSON\Timestamp(1, date($data));; //risolvere il problema noto della data indietro di una ora
+
+	
+	
+
 
 $cursore = $scollection->findOne([ 'id_sensore' => $id_sensore ]);
 
@@ -26,5 +32,7 @@ if (empty($cursore)){
 
 	
 $result = $mcollection->insertOne( [ 'id_sensore' => $id_sensore, 'umidita' => $umidita, 'temperatura' => $temperatura, 'data' => $data ] ); 
+ 
+
  
 ?>
