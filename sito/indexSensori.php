@@ -24,24 +24,27 @@ li {
 
 table{
 	
-	border: 1px solid black;
+	font-family: arial, sans-serif;
+	
 	border-collapse: collapse;
+	width: 50%;
 	
 	
 }
 
 
-td{
-	border: 1px solid black;
-	
-	padding: 40px;
+td, th{
+	border: 1px solid grey;
+	text-align: left;
+	padding: 10px;
 	
 	
 }
 
 
-th{
-		border: 1px solid black;
+
+tr:nth-child(even){
+		background-color: #dddddd
 
 	
 	
@@ -60,6 +63,8 @@ th{
 		
 		$sensori = $client->db_sensori->sensori;
 
+		
+		
 		$cursor = iterator_to_array( $sensori->find( [ 'attivo' => true ] )); #se il db è vuoto o non ci sono sensori attivi bisogna gestire l' eccezzione
 	
 		$keys1 = iterator_to_array($cursor[0]);
@@ -92,7 +97,7 @@ th{
 			
 				echo "<td>";
 				
-				echo "<a href=\"edit_sensore.html\">";
+				echo "<a href=\"mostra_sensore.php?id_sensore=" ; echo (string)$entry->id_sensore; echo "\">";
 					echo " <img src=\"DHT11_low.png\" alt=\"dht11.png\" > ";
 				echo "</a>";
 					

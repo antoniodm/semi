@@ -6,7 +6,12 @@
 	-cambiare lo stato attivo/non attivo
 	-eliminarlo
 
-	
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
 <style>
 ul {
     list-style-type: none;
@@ -24,24 +29,27 @@ li {
 
 table{
 	
-	border: 1px solid black;
+	font-family: arial, sans-serif;
+	
 	border-collapse: collapse;
+	width: 50%;
 	
 	
 }
 
 
-td{
-	border: 1px solid black;
-	
-	padding: 40px;
+td, th{
+	border: 1px solid grey;
+	text-align: left;
+	padding: 10px;
 	
 	
 }
 
 
-th{
-		border: 1px solid black;
+
+tr:nth-child(even){
+		background-color: #dddddd
 
 	
 	
@@ -92,7 +100,7 @@ th{
 			
 				echo "<td>";
 				
-				echo "<a href=\"edit_sensore.html\">";
+				echo "<a href=\"mostra_seme.php?id_sensore="; echo (string)$entry->id_sensore; echo "\">";
 					echo " <img src=\"seme_low.png\" alt=\"dht11.png\" > ";
 				echo "</a>";
 					
