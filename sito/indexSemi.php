@@ -1,10 +1,6 @@
 <html>
 
-//gli attivi potrebbero avere uno sfondo diverso
-//cliccando l' id del sensore porta alla pagina del sensore da cui si può:
-	-cambiare il nome della pianta
-	-cambiare lo stato attivo/non attivo
-	-eliminarlo
+//altro index con i semi archiviati
 
 <head>
 
