@@ -1,7 +1,11 @@
 <html>
 
 questa pagina dovrebbe mostrare il grafico della umidità e temperatura e la possibilità di scaricare tutte le misurazioni in un formato particolare
+<head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
 
 <style>
 ul {
@@ -101,7 +105,10 @@ th{
 				if( $i>0){
 					echo "<td>";
 					if($i == 4){
-							$valore;
+
+						$valore = (string)$valore;
+						// Or using ini_get()
+				echo ini_get('include_path');
 					}
 
 					echo $valore;
