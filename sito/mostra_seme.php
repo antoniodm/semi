@@ -26,13 +26,15 @@
 
 	$options = array("sort" => array("_id" => 1)); //meglio farlo sulla data
 
-	$prima_misurazione = $misurazioni->findOne($filter, $options);
+	$ultima_misurazione = $misurazioni->findOne($filter, $options);
 	
 	$options = array("sort" => array("_id" => -1)); //meglio farlo sulla data
 
-	$ultima_misurazione = $misurazioni->findOne($filter, $options);
+	$prima_misurazione = $misurazioni->findOne($filter, $options);
 	
 
+	
+		
 ?>
 
 <html>
@@ -62,8 +64,7 @@ echo $seme;
 		<form action="/semi/sito/archivia_misurazione.php" method="get""> 
 		<input type="hidden" name="id_sensore" value="
 		<?php
-		echo $seme;
-		
+			echo $id_sensore;
 		?>
 		" />
 		<tr>
@@ -123,10 +124,18 @@ echo $seme;
 		</tr>
 		<tr>
 			<td>
-				<input type="submit" value="Archivia Seme">
+				<input type="submit" value="archivia Seme">
 			</td>
 		</tr>
 		</form>
+		
+		<tr>
+			<td>
+				<form action="/semi/sito/download_misurazione.php" method="get"">
+					<input type="submit" value="scarica misurazione">
+				</form>
+			</td>
+		<tr>
 	</table>
 
 
