@@ -1,7 +1,5 @@
 <html>
 
-//altro index con i semi archiviati
-
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +94,7 @@ tr:nth-child(even){
 			
 				echo "<td>";
 				
-				echo "<a href=\"mostra_seme.php?id_sensore="; echo (string)$entry->id_sensore; echo "\">";
+				echo "<a href=\"mostra_archiviata.php?id_sensore="; echo (string)$entry->id_sensore; echo "\">";
 					echo " <img src=\"seme_low.png\" alt=\"dht11.png\" > ";
 				echo "</a>";
 					

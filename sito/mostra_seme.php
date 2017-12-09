@@ -81,7 +81,7 @@ echo $seme;
 		<tr>
 			<td>
 				<?php
-					echo 'umidità attuale: ';
+					echo 'ultima umidità: ';
 					echo $ultima_misurazione['umidita'];
 			
 				?>
@@ -90,7 +90,7 @@ echo $seme;
 		<tr>
 			<td>
 				<?php
-					echo 'temperatura attuale: ';
+					echo 'ultima temperatura: ';
 					echo $ultima_misurazione['temperatura'];			
 				?>
 			</td>
