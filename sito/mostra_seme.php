@@ -81,7 +81,7 @@ echo $seme;
 		<tr>
 			<td>
 				<?php
-					echo 'ultima umidità: ';
+					echo 'ultima umidità misurata: ';
 					echo $ultima_misurazione['umidita'];
 			
 				?>
@@ -90,7 +90,7 @@ echo $seme;
 		<tr>
 			<td>
 				<?php
-					echo 'ultima temperatura: ';
+					echo 'ultima temperatura misurata: ';
 					echo $ultima_misurazione['temperatura'];			
 				?>
 			</td>
@@ -109,7 +109,7 @@ echo $seme;
 		<tr>
 			<td>
 				<?php
-					echo "umidità iniziale ";
+					echo "prima umidità misurata";
 					echo $prima_misurazione['umidita'];
 				?>
 			</td>
@@ -117,7 +117,7 @@ echo $seme;
 		<tr>
 			<td>
 				<?php
-					echo 'temperatura iniziale: ';
+					echo 'prima temperatura misurata: ';
 					echo $ultima_misurazione['temperatura'];			
 		?>
 			</td>
@@ -131,8 +131,12 @@ echo $seme;
 		
 		<tr>
 			<td>
-				<form action="/semi/sito/download_misurazione.php" method="get"">
+				<form action="/semi/sito/scarica_misurazione.php" method="get"">
 					<input type="submit" value="scarica misurazione">
+					<input type="hidden" name= "id_sensore" value="
+					<?php
+			echo $id_sensore;
+		?>">
 				</form>
 			</td>
 		<tr>
