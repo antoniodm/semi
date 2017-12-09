@@ -43,9 +43,9 @@ if len(sys.argv) == 3:
 		updater = sys.argv[2]
 if len(sys.argv) == 1:
 	port = "/dev/ttyACM0"
-	updater = "http://localhost/MongoUpdater.php"
+	updater = "http://192.168.1.2/MongoUpdater.php"
 else:
-	updater = "http://localhost/MongoUpdater.php"
+	updater = "http://192.168.1.2/MongoUpdater.php"
 
 while True:
 	try :
@@ -54,10 +54,11 @@ while True:
 			if update:
 				p = s[0].split(":")
 				r = requests.post(updater, data={
-					'id_sensor': p[0], 
-					'humidity': p[1], 
-					'temperature': p[2],
-					'datetime': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), 
+					'id_arduino': '1',
+					'id_sensore': p[0], 
+					'umidita': p[1], 
+					'temperatura': p[2],
+					'data': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), 
 				})
 				print (p)
 				print(r)
