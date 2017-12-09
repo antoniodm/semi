@@ -1,0 +1,4 @@
+Per arduino io usai una libreria un po differente, in ogni caso dovrebbe fare le stesse cose di quella che hai usato,
+va solo aggiunto nella stringa in output, un ulteriore chiave per l id dell'arduino.
+Va poi aggiunto di conseguenza anche nel client.py, ma è una cosa che poi facciamo alla fine, tanto si tratta di
+aggiungere due cose.
