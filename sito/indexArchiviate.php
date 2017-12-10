@@ -45,20 +45,43 @@ tr:nth-child(even){
 </style>
 
 
+
+
 		<?php
 
-
+		try{
 		require 'vendor/autoload.php';
+		}
+		catch( Exception $e){
+			die("Errore nel caricamento delle librerie di Mongodb");
+		}
+		
+		try {
 
 		$client = new MongoDB\Client("mongodb://localhost:27017");		
 		
 		$db_archiviate = $client->db_archiviate;
 		
 		$lista_archiviate = iterator_to_array($db_archiviate->listCollections());
+
 		
+		}
+		catch( Exception $e){
+			//echo $e->getMessage();
+			die("Errore nella connessione al database");
+		}
+		
+
+		if($lista_archiviate == null){
+			die("Non sono ancora presenti misurazioni archiviate!");
+		}
 		
 		?>
+<head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
 
 
 	<body>

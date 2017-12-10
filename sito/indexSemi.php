@@ -54,15 +54,29 @@ tr:nth-child(even){
 		<ul>
 		<?php
 
-
+		try{
+			
 		require 'vendor/autoload.php';
 
+		}catch(Exception $e){
+			die("Errore nel caricamento delle librerie di MongoDB: " .$e->getMessage());
+		}
+		
+		try{
+			
 		$client = new MongoDB\Client("mongodb://localhost:27017");		
 		
-		
 		$sensori = $client->db_sensori->sensori;
-
-		$cursor = iterator_to_array( $sensori->find( [ 'attivo' => true ] )); 
+		
+		$cursor = iterator_to_array( $sensori->find( [ 'attivo' => true ] ));
+		
+		}catch(Exception $e){
+			
+			die("Errore nella connessione al server MongoDB: " .$e->getMessage() );
+			
+		}
+		
+		 
 	
 		$keys1 = iterator_to_array($cursor[0]); #se il db è vuoto cursor è null, bisogna gestire eccezzione
 		

@@ -4,14 +4,17 @@
 
 	require 'vendor/autoload.php';
 	
+	
+	try{
+		
 	$ipdatabase = "mongodb://localhost:27017";
 	
 	$client = new MongoDB\Client($ipdatabase);
 	
 	$id_sensore = (int)$_GET['id_sensore'];
- 
-	
+ 	
 	$sensori = $client ->db_sensori->sensori;
+
 	
 	$misurazioni = $client ->db_misurazioni->misurazioni;
 	
@@ -31,6 +34,11 @@
  
 	$ultima_misurazione = $misurazioni->findOne($filter, $options );
 	
+	} catch(Exception $e){
+		
+		die("Errore connessione al database MongoDB: " .$e->getMessage() );
+		
+	}
  
  ?>
  
@@ -97,11 +105,19 @@ echo $id_sensore;
 		<tr>
 			<td>
 				<?php
-				echo "sensore ";
-					if($sensore['attivo'] == true)
-						echo "attivo"; //verde
-					else
+				echo "sensore: ";
+					if($sensore['attivo'] == true){
+						echo "attivo  "; //verde
+						echo "  <svg height=\"10\" width=\"10\">
+								  <circle cx=\"5\" cy=\"5\" r=\"4\"  fill=\"green\" />
+								</svg> " ;
+					}
+					else{
 						echo "inattivo"; //rosso
+						echo "  <svg height=\"10\" width=\"10\">
+								  <circle cx=\"5\" cy=\"5\" r=\"4\"  fill=\"red\" />
+								</svg> " ;
+					}
 				?>
 			</td>
 		</tr>

@@ -1,11 +1,4 @@
 <html>
-
-//gli attivi potrebbero avere uno sfondo diverso
-//cliccando l' id del sensore porta alla pagina del sensore da cui si può:
-	-cambiare il nome della pianta
-	-cambiare lo stato attivo/non attivo
-	-eliminarlo
-
 	
 <style>
 ul {
@@ -51,6 +44,10 @@ tr:nth-child(even){
 }
 </style>
 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 	<body>
 		<ul>
 		<?php
@@ -58,21 +55,37 @@ tr:nth-child(even){
 
 		require 'vendor/autoload.php';
 
+		try{
+			
 		$client = new MongoDB\Client("mongodb://localhost:27017");		
-		
 		
 		$sensori = $client->db_sensori->sensori;
 
 		
-		
-		$cursor = iterator_to_array( $sensori->find( [ ] )); #se il db è vuoto o non ci sono sensori attivi bisogna gestire l' eccezzione
+		if( ( $cursor = iterator_to_array( $sensori->find( [ ] )) ) == null ){
+			
+				die("Nessun sensore presente nel database");
+			
+		} 
+	
 	
 		$keys1 = iterator_to_array($cursor[0]);
 		
 		$keys1[] = array_keys($keys1);
 	
-		echo "<table>";
-		echo "<tr>";
+		}catch (Exception $e){
+		
+			die("Errore nella connessione al server MongoDB: " .$e->getMessage() );
+			
+		}
+	
+		?>
+		<table>
+		
+			<tr>
+		
+		<?php
+		
 		
 		$i = 0;
 		
@@ -121,10 +134,10 @@ tr:nth-child(even){
 
 		}
 		
-		
-		echo "</table>";
-
 		?>
+		</table>
+
+		
 		</ul>
 	</body>
 </html>
