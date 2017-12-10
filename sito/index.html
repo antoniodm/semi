@@ -3,21 +3,31 @@ my-div {
     background-color:  #ff1a1a;
     width: 100px;
     height: 100x;
+	align: center;
+	
 }
 a.fill-div {
     display: block;
     height: 25%;
     width: 25%;
     text-decoration: none;
+	border-size:2px;
+	border-style:solid;
+	border-color:grey;
+	margin: 10px;
+
+	display:flex;
+	align-items: center;
+	justify-content:center;
 	
-}
+	}
 </style>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<div id="my-div">
+<div id="my-div" align="center">
     <a href="indexSemi.php" class="fill-div"> Misurazioni  </a>
     <a href="indexSensori.php" class="fill-div"> Sensori  </a>
     <a href="indexArchiviate.php" class="fill-div"> Misurazioni Archiviate </a>

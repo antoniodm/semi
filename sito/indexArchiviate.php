@@ -1,5 +1,5 @@
 <html>
-
+(click sul seme per mostrare il dettaglio)
 <style>
 ul {
     list-style-type: none;

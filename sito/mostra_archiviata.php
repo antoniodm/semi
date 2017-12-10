@@ -1,5 +1,18 @@
 <html>
 
+<style>
+
+td, tr{
+	
+	text-align:center;
+
+	vertical-align:middle;
+	
+}
+
+
+</style>
+
 <?php
 
 
@@ -54,6 +67,7 @@ echo $pianta;
 
 
 <body>
+	<div align = "center">
 
 	<table>
 		<tr>
@@ -96,7 +110,7 @@ echo $pianta;
 		<tr>
 	</table>
 
-
+	</div>
 <body>
 
 <html>

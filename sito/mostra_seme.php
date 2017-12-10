@@ -1,5 +1,19 @@
 <html>
 
+<style>
+
+td, tr{
+	
+	text-align:center;
+
+	vertical-align:middle;
+	
+}
+
+
+</style>
+
+
 <?php
 
 
@@ -58,9 +72,8 @@ echo $seme;
 </title>
 
 
-<body>
-
-	<table>
+<div align = "center">
+	<table text-align = "center" vertical-align = "middle" >
 		<form action="/semi/sito/archivia_misurazione.php" method="get""> 
 		<input type="hidden" name="id_sensore" value="
 		<?php
@@ -135,13 +148,13 @@ echo $seme;
 					<input type="submit" value="scarica misurazione">
 					<input type="hidden" name= "id_sensore" value="
 					<?php
-			echo $id_sensore;
-		?>">
+						echo $id_sensore;
+					?>">
 				</form>
 			</td>
 		<tr>
 	</table>
-
+</div>
 
 <body>
 

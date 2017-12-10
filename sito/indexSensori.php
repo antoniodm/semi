@@ -1,5 +1,5 @@
 <html>
-	
+(click sul sensore per mostrare il dettaglio)
 <style>
 ul {
     list-style-type: none;
@@ -150,7 +150,6 @@ tr:nth-child(even){
 		?>
 		</table>
 
-		
 		</ul>
 	</body>
 </html>

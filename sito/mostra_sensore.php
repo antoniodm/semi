@@ -1,5 +1,21 @@
  <!DOCTYPE html>
 
+ 
+ <style>
+
+td, tr{
+	
+	text-align:center;
+
+	vertical-align:middle;
+	
+}
+
+
+</style>
+ 
+ 
+ 
  <?php
 
 	require 'vendor/autoload.php';
@@ -66,6 +82,7 @@ echo $id_sensore;
 
 
 <body>
+<div align = "center">
 
 	<table>
 		<form action="/semi/sito/modifica_nome_seme.php?id_sensore=dario" method="get"">
@@ -93,13 +110,6 @@ echo $id_sensore;
 					echo $sensore['pianta'];
 			
 				?>
-				<input type="text" name="nome_pianta" value=
-				<?php
-					echo "\"";
-					echo $sensore['pianta'] ;
-					echo "\"";
-				?>
-				>
 			</td>
 		</tr>
 		<tr>
@@ -152,13 +162,30 @@ echo $id_sensore;
 		</tr>
 		<tr>
 		<td>
+					modifiche nome: 
+
+		</td>
+		</tr>
+		<tr>
+		<td>
+				<input type="text" name="nome_pianta" value=
+				<?php
+					echo "\"";
+					echo $sensore['pianta'] ;
+					echo "\"";
+				?>
+				>
+		</tr>
+		</td>
+		<tr>
+		<td>
 		<input type="submit" value="Salva">
 		</td>
 		</tr>
 		</form>
 
 	</table>
-
+</div>
 
 <body>
 

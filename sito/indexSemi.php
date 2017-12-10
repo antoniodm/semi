@@ -1,4 +1,5 @@
 <html>
+(click sul seme per mostrare il dettaglio)
 
 <head>
 
