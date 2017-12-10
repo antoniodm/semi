@@ -82,9 +82,11 @@ echo $seme;
 		" />
 		<tr>
 			<td>
+			<strong>
 				<?php
 					echo $seme;
-				?>			
+				?>	
+			</strong>
 			</td>
 
 		<tr>
@@ -93,19 +95,26 @@ echo $seme;
 			</td>
 		<tr>
 			<td>
+				ultima umidità misurata:
+				<strong>
 				<?php
-					echo 'ultima umidità misurata: ';
+				
 					echo $ultima_misurazione['umidita'];
 			
 				?>
+				</strong>
 			</td>
 		</tr>
 		<tr>
 			<td>
+			ultima temperatura misurata:
+			<strong>
+			
 				<?php
-					echo 'ultima temperatura misurata: ';
+					
 					echo $ultima_misurazione['temperatura'];			
 				?>
+			</strong>
 			</td>
 		</tr>
 		<tr>
@@ -131,18 +140,23 @@ echo $seme;
 		</tr>
 		<tr>
 			<td>
+			prima umidità misurata:
+				<strong>			
 				<?php
-					echo "prima umidità misurata";
 					echo $prima_misurazione['umidita'];
 				?>
+				</strong>
 			</td>
 		</tr>
 		<tr>
 			<td>
+				prima temperatura misurata:
+				<strong>
 				<?php
-					echo 'prima temperatura misurata: ';
+				
 					echo $ultima_misurazione['temperatura'];			
 		?>
+				<strong>
 			</td>
 		</tr>
 		<tr>

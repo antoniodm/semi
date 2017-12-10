@@ -94,9 +94,11 @@ echo $id_sensore;
 		" />
 		<tr>
 			<td>
+			<strong>
 				<?php
 					echo $_GET['id_sensore'];
-				?>			
+				?>	
+			</strong>
 			</td>
 
 		<tr>
@@ -145,22 +147,27 @@ echo $id_sensore;
 		</tr>
 		<tr>
 		<td>
+		 prima misurazione: 
+		<strong>
 		<?php
 		
-			echo 'prima misurazione: ';
 			echo $prima_misurazione['data'];
 			
 		?>
+		</strong>
 		</td>
 		</td>
 		<tr>
 		<td>
+		ultima misurazione:
+		<strong>
 		<?php
 		
-			echo 'ultima misurazione: ';
+			
 			echo $ultima_misurazione['data'];
 			
 		?>
+		</strong>
 		</td>
 		</tr>
 		<tr>
