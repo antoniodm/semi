@@ -105,11 +105,14 @@ echo $id_sensore;
 			</td>
 		<tr>
 			<td>
+				
+				seme attuale: 
+				<strong>
 				<?php
-					echo 'seme attuale: ';
 					echo $sensore['pianta'];
 			
 				?>
+				</strong>
 			</td>
 		</tr>
 		<tr>

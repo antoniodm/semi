@@ -112,10 +112,20 @@ echo $seme;
 			<td>
 				<?php
 				echo "sensore ";
-					if($sensore['attivo'] == true)
+					if($sensore['attivo'] == true){
+					
 						echo "attivo"; //verde
-					else
+						echo "  <svg height=\"10\" width=\"10\">
+								  <circle cx=\"5\" cy=\"5\" r=\"4\"  fill=\"green\" />
+								</svg> " ;
+					}
+					else{
+						
 						echo "inattivo"; //rosso
+						echo "  <svg height=\"10\" width=\"10\">
+								  <circle cx=\"5\" cy=\"5\" r=\"4\"  fill=\"#e60000\" />
+								</svg> " ;
+					}
 				?>
 			</td>
 		</tr>
