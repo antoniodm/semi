@@ -94,7 +94,9 @@ tr:nth-child(even){
 				
 			echo "<th>";
 			if($i > 0){
-			echo $key;		
+			echo $key;
+				if($key == "attivo")
+					$iattivo = $i;
 			}
 			echo "</th>";
 			$i = $i + 1;
@@ -122,9 +124,20 @@ tr:nth-child(even){
 			
 				if( $i>0){
 					echo "<td>";
-									
+					if( $i == $iattivo){
+						if($valore == true){
+								echo "  <svg height=\"40\" width=\"40\">
+								  <circle cx=\"20\" cy=\"20\" r=\"15\"  fill=\"green\" />
+								</svg> " ;
+						}else{
+								echo "  <svg height=\"40\" width=\"40\">
+								  <circle cx=\"20\" cy=\"20\" r=\"15\"  fill=\"#e60000\" />
+								</svg> " ;
+						}
+					}else{
+						
 					echo $valore;
-					
+					}
 					echo "</td>";
 				}
 			$i = $i + 1;
